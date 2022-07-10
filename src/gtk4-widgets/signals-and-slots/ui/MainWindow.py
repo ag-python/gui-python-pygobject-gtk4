@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK 4: PyGObject Signal e Slots."""
+"""Python e GTK 4: PyGObject Signal e Slots ui file."""
+
+from pathlib import Path
 
 import gi
 
@@ -10,47 +12,22 @@ from gi.repository import Adw, Gio, Gtk
 
 Adw.init()
 
+BASE_DIR = Path(__file__).resolve().parent
+FILENAME = str(BASE_DIR.joinpath('MainWindow.ui'))
 
+
+@Gtk.Template(filename=FILENAME)
 class ExampleWindow(Gtk.ApplicationWindow):
+    __gtype_name__ = 'ExampleWindow'
+
+    entry = Gtk.Template.Child(name='entry')
+    label = Gtk.Template.Child(name='label')
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.set_title(title='Python e GTK 4: PyGObject Signal e Slots')
-        self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
-        self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
-
-        headerbar = Gtk.HeaderBar.new()
-        self.set_titlebar(titlebar=headerbar)
-
-        menu_button_model = Gio.Menu()
-        menu_button_model.append('Preferências', 'app.preferences')
-
-        menu_button = Gtk.MenuButton.new()
-        menu_button.set_icon_name(icon_name='open-menu-symbolic')
-        menu_button.set_menu_model(menu_model=menu_button_model)
-        headerbar.pack_end(child=menu_button)
-
-        vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=6)
-        vbox.set_margin_top(margin=12)
-        vbox.set_margin_end(margin=12)
-        vbox.set_margin_bottom(margin=12)
-        vbox.set_margin_start(margin=12)
-        self.set_child(child=vbox)
-
-        self.entry = Gtk.Entry.new()
-        self.entry.set_placeholder_text(text='Digite algo.')
-        vbox.append(child=self.entry)
-
-        self.label = Gtk.Label.new(str='Este texto será alterado!')
-        self.label.set_vexpand(True)
-        vbox.append(child=self.label)
-
-        button = Gtk.Button.new_with_label(label='Clique Aqui')
-        button.connect('clicked', self._on_button_clicked)
-        vbox.append(child=button)
-
-    def _on_button_clicked(self, widget):
+    @Gtk.Template.Callback()
+    def on_button_clicked(self, widget):
         if self.entry.get_text().split():
             self.label.set_label(str=self.entry.get_text())
         else:
