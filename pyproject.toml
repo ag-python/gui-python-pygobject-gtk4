@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "gui-python-pygobject-gtk4"
+version = "0.1.0"
+description = "Criando interfaces gráficas com a linguagem de programação Python (PyGObject) e o toolkit gráfico Gtk 4"
+authors = ["Renato Cruz <zkpcvm6dz@mozmail.com>"]
+
+license = "MIT"
+readme = "README.md"
+homepage = "https://gtk4-pygobject.justcode.com.br/"
+repository = "https://github.com/natorsc/gui-python-pygobject-gtk4"
+documentation = "https://github.com/natorsc/gui-python-pygobject-gtk4"
+keywords = ["python", "pygobject", "gtk 4", "Gnome", "Gnome Builder"]
+
+classifiers = [
+    "Topic :: Software Development",
+    "Topic :: Desktop Environment",
+    "Topic :: Desktop Environment :: Gnome",
+    "Environment :: X11 Applications :: GTK",
+    "Environment :: X11 Applications :: Gnome",
+    "Operating System :: Microsoft",
+    "Operating System :: Microsoft :: Windows :: Windows 10",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+PyGObject = "^3.42.1"
+
+[tool.poetry.dev-dependencies]
+pylint = "^2.13.0"
+autopep8 = "^1.6.0"
+PyGObject-stubs = "^0.0.9"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/natorsc/gui-python-pygobject-gtk4/issues"
+"Blog" = "https://blog.justcode.com.br/series/python-e-gtk-4"
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

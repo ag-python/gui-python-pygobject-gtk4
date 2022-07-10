@@ -1,0 +1,23 @@
+title: Criando interfaces gráficas com Python (PyGObject) e Gtk 4
+description: Repositório criado para documentar e centralizar conteúdos, dicas, tutoriais e exemplos de código sobre a construção de interfaces com a linguagem de programação Python (PyGObject) e o toolkit gráfico Gtk 4.
+show_downloads: true
+theme: jekyll-theme-cayman
+author: Renato Cruz (natorsc)
+lang: pt-BR
+url: https://gtk4-pygobject.justcode.com.br
+logo: /src/data/icons/br.com.justcode.Exemplo.png
+google_analytics: G-E4MM4CQ80F
+social:
+  name: Ben Balter
+  links:
+    - https://github.com/natorsc
+    - https://blog.justcode.com.br
+    - https://hashnode.com/@natorsc
+    - https://www.linkedin.com/in/natorsc
+    - https://twitter.com/blogjustcode
+twitter:
+  username: blogjustcode
+  card: summary
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
