@@ -70,6 +70,17 @@
 
 ![Python e GTK 4: PyGObject libadwaita Adw.Clamp().](./images/gtk4-libadwaita-widgets/gtk-4-pygobject-adw-clamp.webp)
 
+---
+
+## Adw ColorScheme
+
+- [Python](../src/gtk4-libadwaita-widgets/colorscheme).
+- [Arquivos de interface (ui)](../src/gtk4-libadwaita-widgets/colorscheme/ui).
+
+![Python e GTK 4: PyGObject libadwaita Adw.ColorScheme().](./images/gtk4-libadwaita-widgets/gtk-4-pygobject-adw-colorscheme.webp "Python e GTK 4: PyGObject libadwaita Adw.ColorScheme().")
+
+---
+
 ## Adw ComboRow
 
 - [Python](../src/gtk4-libadwaita-widgets/comborow).

@@ -238,7 +238,6 @@ ToDo
 - [Gtk.CheckButton](./docs/gtk4-widgets.md#gtk-checkbutton).
 - [Gtk.ColorButton](./docs/gtk4-widgets.md#gtk-colorbutton).
 - [Gtk.ComboBoxText](./docs/gtk4-widgets.md#gtk-comboboxtext).
-- [Gtk dark mode](./docs/gtk4-widgets.md#gtk-style-dark-mode).
 - [Gtk.Dialog](./docs/gtk4-widgets.md#gtk-dialog).
 - [Gtk.DragAndDrop (Gtk.DragSource e Gtk.DropTarget)](./docs/gtk4-widgets.md#gtk-drag-and-drop).
 - [Gtk.Entry](./docs/gtk4-widgets.md#gtk-entry).
@@ -296,6 +295,7 @@ A [libadwaita](https://gitlab.gnome.org/GNOME/libadwaita) deve estar disponível
 - [Adw.CarouselIndicatorDots](./docs/gtk4-libadwaita-widgets.md#adw-carouselindicatordots).
 - [Adw.CarouselIndicatorLines](./docs/gtk4-libadwaita-widgets.md#adw-carouselindicatorlines).
 - [Adw.Clamp](./docs/gtk4-libadwaita-widgets.md#adw-clamp).
+- [Adw.ColorScheme (Dark mode)](./docs/gtk4-libadwaita-widgets.md#adw-colorscheme).
 - [Adw.ComboRow](./docs/gtk4-libadwaita-widgets.md#adw-comborow).
 - [Adw.ExpanderRow](./docs/gtk4-libadwaita-widgets.md#adw-expanderrow).
 - [Adw.Flap](./docs/gtk4-libadwaita-widgets.md#adw-flap).

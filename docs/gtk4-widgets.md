@@ -80,14 +80,6 @@
 
 ---
 
-## Gtk dark mode
-
-- [Python](../src/gtk4-widgets/style-dark-mode).
-
-![Python e GTK 4: PyGObject Style dark mode.](./images/gtk4-widgets/gtk-4-pygobject-style-dark-mode.webp)
-
----
-
 ## Gtk Dialog
 
 - [Python](../src/gtk4-widgets/dialog).
