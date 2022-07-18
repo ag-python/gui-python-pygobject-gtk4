@@ -219,7 +219,12 @@ Este é o estilo padrão e para utilizar o mesmo não adicione `Adw.init()` no c
 
 ## Gtk 4 Blueprint
 
-ToDo
+### Extensões
+
+- [GNU Emacs (DrBluefall)](https://github.com/DrBluefall/blueprint-mode).
+- [Visual Studio Code (Bodil Stokke)](https://marketplace.visualstudio.com/items?itemName=bodil.blueprint-gtk)
+- [VIM (thetek42)](https://github.com/thetek42/vim-blueprint-syntax).
+- [VIM (gabmus)](https://gitlab.com/gabmus/vim-blueprint/-/tree/master).
 
 ---
 
