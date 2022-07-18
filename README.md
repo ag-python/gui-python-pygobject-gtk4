@@ -219,12 +219,100 @@ Este é o estilo padrão e para utilizar o mesmo não adicione `Adw.init()` no c
 
 ## Gtk 4 Blueprint
 
+### Instalação
+
+#### Flatpak
+
+Se estiver utilizando o Gnome Builder basta adicionar o seguinte código no arquivo de manifesto que fica na raiz do projeto (`*.json`):
+
+```bash
+{
+  "name": "blueprint-compiler",
+  "buildsystem": "meson",
+  "sources": [
+    {
+      "type": "git",
+      "url": "https://gitlab.gnome.org/jwestman/blueprint-compiler",
+      "branch": "main"
+    }
+  ]
+}
+```
+
+#### Instalação manual
+
+##### Dependências
+
+Debian, Ubuntu e derivados:
+
+```bash
+sudo apt install \
+meson \
+ninja-build
+```
+
+Fedora, Centos, RHEL e derivados:
+
+```bash
+sudo dnf install \
+meson \
+ninja-build
+```
+
+Arch
+
+```bash
+sudo pacman -S \
+meson
+```
+
+Após realizar a instalação das dependências clone o repositório do **blueprint-compiler**:
+
+```bash
+git clone https://gitlab.gnome.org/jwestman/blueprint-compiler.git
+```
+
+Acesse a pasta que foi clonada:
+
+```bash
+cd blueprint-compiler
+```
+
+Ao acessar a pasta execute:
+
+```bash
+meson _build
+```
+
+Por fim execute:
+
+```bash
+ninja -C _build
+```
+
+### Sintaxe
+
+Converter arquivos do projeto de `*.ui` para `*.blp`:
+
+```bash
+blueprint-compiler port
+```
+
+> 📝 comando deve ser executádo na raiz do projeto. Um shell interativo será iniciado.
+
+Gerar arquivo de `*.ui` a partir de um arquivo `*.blp`:
+
+```bash
+blueprint-compiler compile MainWindow.blp --output MainWindow.ui
+```
+
 ### Extensões
 
 - [GNU Emacs (DrBluefall)](https://github.com/DrBluefall/blueprint-mode).
 - [Visual Studio Code (Bodil Stokke)](https://marketplace.visualstudio.com/items?itemName=bodil.blueprint-gtk)
 - [VIM (thetek42)](https://github.com/thetek42/vim-blueprint-syntax).
 - [VIM (gabmus)](https://gitlab.com/gabmus/vim-blueprint/-/tree/master).
+
 
 ---
 
